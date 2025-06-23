@@ -1,0 +1,62 @@
+body {
+  background-color: #ffebef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+.envelope {
+  width: 300px;
+  height: 200px;
+  background: #e63946;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1faee;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: transform 0.5s ease;
+}
+
+.letter {
+  background: white;
+  width: 280px;
+  height: 180px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.message h1 {
+  color: #e63946;
+  font-size: 24px;
+  margin: 0;
+}
+
+.message p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
